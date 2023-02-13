@@ -261,3 +261,21 @@ footer {
     }
     
 }
+
+.video {
+  overflow: hidden;
+  padding-bottom: 25rem;
+  position: relative;
+  height: 0;
+}
+.video iframe {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.circulo {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
