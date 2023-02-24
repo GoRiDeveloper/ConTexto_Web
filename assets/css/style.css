@@ -12,6 +12,7 @@
 
 * {
   box-sizing: border-box;
+  list-style: none;
   margin: 0;
   padding: 0;
 }
@@ -26,6 +27,10 @@ footer {
   width: 100%;
   align-self: flex-end;
   bottom: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 .dinamic-border {
@@ -54,6 +59,47 @@ footer {
   z-index: 1;
 }
 
+.main-img-2 {
+  height: 14rem;
+}
+
+.products-content-first-box-title {
+  color: var(--second-color);
+  font-family: var(--first-font);
+}
+
+.central-logo {
+  width: auto;
+  height: 2.5rem;
+}
+
+.line {
+  width: 3rem;
+  height: 0.3rem;
+  background-color: var(--third-color);
+}
+
+.central-first-content-desktop {
+  display: none;
+}
+
+.central-first-content-first-box-title,
+.central-first-content-second-box-title {
+  color: var(--second-color);
+  font-family: var(--first-font);
+}
+
+.central-first-content-first-box-info,
+.central-first-content-second-box-info {
+  font-family: var(--second-font);
+  font-weight: 500 !important;
+}
+
+.central-first-content-third-box-img {
+  width: auto;
+  height: 13rem;
+}
+
 .footer-box {
   background-color: var(--first-color);
 }
@@ -72,12 +118,50 @@ footer {
   color: #000;
   font-size: 2rem;
   cursor: pointer;
+  transition: all 0.3s;
+}
+
+.footer-box-contact-box i:hover {
+  color: #fff;
 }
 
 .footer-box-location-box p {
   font-size: 1.3rem;
   font-family: var(--second-font);
 }
+
+/* BASciarretta */
+
+.videos {
+  overflow: hidden;
+  padding-bottom: 25rem;
+  position: relative;
+  height: 0;
+}
+
+.videos video {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.circulo {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: var(--third-color);
+}
+
+.cuadrado {
+  height: 150px;
+  width: 150px;
+}
+
+.linea {
+  background-color: var(--third-color);
+}
+
+/* BASciarretta */
 
 .navbar {
   background-color: var(--first-color);
@@ -104,6 +188,25 @@ footer {
   height: 2.125rem;
 }
 
+@media screen and (min-width: 400px) {
+  .central-logo {
+    height: 3rem;
+  }
+
+  .line {
+    width: 5.7rem;
+  }
+
+  .central-first-content-first-box-title,
+  .central-first-content-second-box-title {
+    font-size: 2.2rem;
+  }
+
+  .central-first-content-third-box-img {
+    height: 17rem;
+  }
+}
+
 @media screen and (min-width: 576px) {
   .main-box {
     height: 26rem;
@@ -115,6 +218,42 @@ footer {
 
   .main-text {
     text-align: left !important;
+  }
+
+  .central-logo {
+    height: 4rem;
+  }
+
+  .line {
+    width: 8.7rem;
+    height: 0.6rem;
+  }
+
+  .central-first-content {
+    display: none;
+  }
+
+  .central-first-content-desktop {
+    display: flex;
+  }
+
+  .central-first-content-first-box-img {
+    width: auto;
+    height: 12.5rem;
+  }
+
+  .central-first-content-second-box-title,
+  .central-first-content-second-box-subtitle {
+    color: var(--second-color);
+    font-size: 1.55rem;
+    font-family: var(--first-font);
+  }
+
+  .central-first-content-second-box-info-us,
+  .central-first-content-second-box-info-comfort {
+    font-size: 0.8rem;
+    font-family: var(--second-font);
+    font-weight: 500 !important;
   }
 
   .footer-box {
@@ -138,6 +277,28 @@ footer {
 @media screen and (min-width: 768px) {
   .main-img {
     height: 22rem;
+  }
+
+  .central-logo {
+    height: 5rem;
+  }
+
+  .line {
+    width: 11.7rem;
+  }
+
+  .central-first-content-first-box-img {
+    height: 17rem;
+  }
+
+  .central-first-content-second-box-title,
+  .central-first-content-second-box-subtitle {
+    font-size: 2.5rem;
+  }
+
+  .central-first-content-second-box-info-us,
+  .central-first-content-second-box-info-comfort {
+    font-size: 1rem;
   }
 
   .footer-img {
@@ -166,6 +327,28 @@ footer {
     height: 25rem;
   }
 
+  .central-logo {
+    height: 6.3rem;
+  }
+
+  .line {
+    width: 14.7rem;
+  }
+
+  .central-first-content-first-box-img {
+    height: 22.5rem;
+  }
+
+  .central-first-content-second-box-title,
+  .central-first-content-second-box-subtitle {
+    font-size: 3.1rem;
+  }
+
+  .central-first-content-second-box-info-us,
+  .central-first-content-second-box-info-comfort {
+    font-size: 1.2rem;
+  }
+
   .footer-box-location {
     justify-content: flex-end !important;
     padding-right: 1.25rem;
@@ -180,22 +363,8 @@ footer {
   .main-img {
     height: 30rem;
   }
-}
 
-.video {
-  overflow: hidden;
-  padding-bottom: 25rem;
-  position: relative;
-  height: 0;
-}
-.video iframe {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-}
-
-.circulo {
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  .line {
+    width: 25rem;
+  }
 }
